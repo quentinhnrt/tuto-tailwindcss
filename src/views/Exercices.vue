@@ -3,7 +3,7 @@
 
     <div :class="{'grid grid-cols-1 lg:grid-cols-2': !exercices[currIndex].fullScreen}" class="w-full h-full ">
       <!-- Image + code --->
-      <div :class="{'flex-col h-full': !exercices[currIndex].fullScreen, 'h-2/5': exercices[currIndex].fullScreen}" class="flex bg-zinc-400">
+      <div :class="{'flex-col h-full': !exercices[currIndex].fullScreen, 'h-2/5': exercices[currIndex].fullScreen}" class="flex bg-cyan-700 border-r-4" >
         <div class="max-h-2/5 w-full p-8">
           <div class="h-4/5 w-full pb-8" >
             <img class="h-full w-full object-contain" :src="exercices[currIndex].img">
@@ -31,7 +31,7 @@
       </div>
 
       <!-- Résultat --->
-      <div v-html="code" class="w-full flex items-center justify-center p-8">
+      <div v-html="code" class="w-full flex items-center justify-center p-8 bg-gray-200">
 
       </div>
     </div>
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      code: "<div class='bg-yellow-200 w-full h-14 p-2 flex items-center justify-center'>\n\t<p>Ajouter le code ici</p>\n</div>",
+      code: "<div class='bg-gray-300 w-full h-14 p-2 flex items-center justify-center'>\n\t<p>Ajouter le code ici</p>\n</div>",
       extensions: [html(), oneDark],
       handleReady(payload) {
         shallowRef().value = payload.view;

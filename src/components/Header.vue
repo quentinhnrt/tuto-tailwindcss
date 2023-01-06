@@ -1,7 +1,7 @@
 <template>
-  <header class="w-full h-24 bg-zinc-100 flex items-center justify-center">
+  <header class="w-full h-24 bg-stone-800 flex items-center justify-center">
     <nav class="container">
-      <ul class="flex flex-col md:flex-row items-center justify-center gap-8 text-black">
+      <ul class="flex flex-col md:flex-row items-center justify-center gap-8 text-white">
         <li>
           <router-link to="/exercises">Exercices</router-link>
         </li>

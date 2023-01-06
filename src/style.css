@@ -5,8 +5,11 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+
+
 }
 
 .cm-editor {
     height: 100% !important;
 }
+
